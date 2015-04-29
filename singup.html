@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="assets/styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/index.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/login.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/singup.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/icon-lock.png">
+
+  <script src="assets/scripts/check_pass.js"></script>
+	<title>Passer | SignUp</title>
+</head>
+<body>
+	<header class="main-header">
+       <a href="index.html"><img src="assets/images/logo2.png" id="logo"></a>
+
+        <ul class="horizontalmenu">
+           <li class="item-menu"><a href="index.html">Home</a></li><!--
+        --><li class="item-menu"><a href="login.html">Login</a></li><!--
+        --><li class="item-menu"><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
+
+      <section class="log-form">
+      <form action="assets/scripts/connect.php" method="post">
+		
+		<h1 class="log-title"><center><strong>Welcome to Passer</strong></center></h1>
+		<p class="log-p"><center>Create your account</center></p>
+		
+	  <div class="inputs">
+		  <input id="email" type="email" id="email" name="email" size="30" required placeholder="Email" /><br>
+      <input type="password" id="pass1" name="pass1" size="30" required placeholder="Master Password" onkeyup = "checkPass()"/><br>
+      <input type="password" id="pass2" name="pass2"  size="30" required placeholder="Retype Master Password" onkeyup = "checkPass()"/>
+      <p id="confirmMessage" class="confirmMessage"> ana are mere</p><br>
+      <input type="text" id="hint" name="hint" size="30" required placeholder="Hint" /><br>
+   		<input type="submit" value="Get started" />
+   	</div>
+
+	 </form>
+      	
+      </section>
+	
+</body>
+</html>

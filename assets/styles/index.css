@@ -1,0 +1,116 @@
+body {
+  background: url(../images/clouds.jpg) no-repeat;
+  color: #666666; /* grey */
+  font-family: Varela, "HelveticaNeueLTStd-Roman", "Lucida Sans Unicode", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.25;
+ }
+
+.hero-unit{
+	height: 100%;
+	margin: auto;
+	padding-bottom: 50px;
+	padding-top: 80px;
+	width: 100%;
+}
+
+.main-header {
+	background-color: #c1d7e5;
+	border-bottom: 2px solid #fff;
+	height: 70px;
+	left: 0;
+	padding: 28px 70px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#logo {
+	float: left;
+    margin-top: -20px;
+    margin-left: 100px;
+}
+
+.horizontalmenu {
+	float: right;
+	text-transform: uppercase;
+}
+
+.item-menu {
+	color:black;
+	display: inline-block;
+	margin-right: 50px;
+	vertical-align: baseline;
+}
+
+.item-menu:hover {
+	border-bottom:  4px solid #d32d27;  /* light red */
+}
+
+.section-description {
+	/*background-color: #fff5de; /* salmon */
+	height: 300px;
+	width: 100%;
+}
+
+#main-title {
+	font-size: 40px;
+}
+
+#main-p {
+	font-size: 16px;
+}
+
+.text-container {
+	float: left;
+	height: 100px;
+	margin: 100px 180px;
+	width: 30%;
+}
+
+.description-title {
+	font-size: 30px;
+	color: #d32d27;
+}
+
+#big-pic {
+	float: right;
+	display: block;
+	height: 100%;
+	width: 40%;
+}
+
+#section-two {
+	padding-left: 80px;
+}
+
+.column {
+	display: inline-block;
+	padding: 100px;
+	width: 30%;
+}
+
+.one, .two {
+	width: 49%;
+	padding: 20px 100px;
+	margin-top: 30px;
+}
+
+.one {
+	float: left;
+	border-right: 1px solid #d32d27; /* light red */ 
+}
+
+.two {
+	float: right;
+}

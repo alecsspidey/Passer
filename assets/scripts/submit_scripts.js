@@ -15,7 +15,6 @@ function checkPass()
         //Set the color to the good color and inform
         //the user that they have entered the correct password 
         pass2.style.backgroundColor = goodColor;
-        message.style.color = goodColor;
         message.innerHTML = "Passwords Match!"
         document.getElementById("signup").disabled = false;
     }else{
@@ -23,8 +22,19 @@ function checkPass()
         //Set the color to the bad color and
         //notify the user.
         pass2.style.backgroundColor = badColor;
-        message.style.color = badColor;
         message.innerHTML = "Passwords Do Not Match!"
         document.getElementById("signup").disabled = true;
     }
 }  
+
+function checkAvailability() {
+  jQuery.ajax({
+  url: "assets/scripts/check_availability.php",
+  data:'username='+$("#email").val(),
+  type: "POST",
+  success:function(data){
+    $("#availability_check_status").html(data);
+  },
+  error:function (){}
+  });
+}

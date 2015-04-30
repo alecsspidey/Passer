@@ -17,6 +17,7 @@ function checkPass()
         pass2.style.backgroundColor = goodColor;
         message.style.color = goodColor;
         message.innerHTML = "Passwords Match!"
+        document.getElementById("signup").disabled = false;
     }else{
         //The passwords do not match.
         //Set the color to the bad color and
@@ -24,5 +25,6 @@ function checkPass()
         pass2.style.backgroundColor = badColor;
         message.style.color = badColor;
         message.innerHTML = "Passwords Do Not Match!"
+        document.getElementById("signup").disabled = true;
     }
 }  
